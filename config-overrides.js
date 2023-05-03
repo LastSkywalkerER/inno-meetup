@@ -31,7 +31,7 @@ module.exports = override(
     new webpack.EnvironmentPlugin({
       REACT_APP_DEVELOPMENT: process.env.NODE_ENV === 'development',
       REACT_APP_SECRET: secret,
-      ...encrypt(['PRESENTATION_LINK', 'REVEAL_SECRET']),
+      ...encrypt(['REVEAL_SECRET']),
     }),
   ),
 );

@@ -16,6 +16,5 @@ const decrypt = (env?: string): string => {
 
 export const config = {
   isDev: process.env.REACT_APP_DEVELOPMENT,
-  link: decrypt(process.env.REACT_APP_PRESENTATION_LINK),
   secret: decrypt(process.env.REACT_APP_REVEAL_SECRET),
 };
