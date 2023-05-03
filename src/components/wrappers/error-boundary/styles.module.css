@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+  overflow: auto;
+  padding: 16px;
+}
+
+.buttonsWrapper {
+  display: 'flex';
+  flex-wrap: 'wrap';
+
+  justify-content: 'center';
+  gap: '16px';
+}
+
+.description {
+  overflow: 'scroll';
+
+  height: 'auto';
+  width: '100%';
+}
