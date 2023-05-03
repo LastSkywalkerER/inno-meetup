@@ -30,10 +30,9 @@ export const CommonStyles = () => (
       },
       'html, #root': {},
       body: {
-        overflow: 'hidden',
-        position: 'relative',
-        height: '100vh',
-        width: '100vw',
+        background: palette.customColors.background,
+
+        overflowX: 'hidden',
       },
     })}
   />

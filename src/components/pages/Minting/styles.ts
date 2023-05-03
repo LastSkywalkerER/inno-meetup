@@ -1,21 +1,18 @@
 import { makeStyles } from 'tss-react/mui';
 
-export const useClasses = makeStyles()(({ spacing, palette }) => ({
+export const useClasses = makeStyles()(({ spacing, palette, breakpoints }) => ({
   page: {
-    background: palette.customColors.background,
-
     padding: '10vh 10%',
-    position: 'absolute',
-
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
 
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
     gap: spacing(10),
+
+    [breakpoints.down('md')]: {
+      alignItems: 'center',
+      flexDirection: 'column',
+    },
   },
   infoWrapper: {
     display: 'flex',
@@ -37,11 +34,16 @@ export const useClasses = makeStyles()(({ spacing, palette }) => ({
     display: 'flex',
     gap: spacing(1),
     textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
   },
   loading: {
     color: palette.customColors.secondary,
   },
   column: {
     maxWidth: '40%',
+
+    [breakpoints.down('md')]: {
+      maxWidth: '100%',
+    },
   },
 }));
