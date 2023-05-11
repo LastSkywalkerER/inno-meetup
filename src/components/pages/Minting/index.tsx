@@ -85,7 +85,7 @@ const MintingPage = () => {
             maxClaimablePerWallet,
             currentMintSupply,
           }) => (
-            <Paper key={startTime.toISOString()} className={classes.stageWrapper}>
+            <Paper key={startTime.toISOString()} className={classes.stageWrapper} elevation={2}>
               <Box>
                 {activeClaimCondition?.data?.startTime?.toISOString() ===
                 startTime.toISOString() ? (
@@ -99,7 +99,7 @@ const MintingPage = () => {
                 value={availableSupply.length > 10 ? 'Unlimited' : availableSupply}
               />
               <StageRow name={'Price'} value={`${formatUnits(price)} ETH`} />
-              <StageRow name={'Start time'} value={startTime.toISOString()} />
+              <StageRow name={'Start time'} value={startTime.toLocaleString()} />
               <StageRow name={'Maximum'} value={maxClaimableSupply} />
               <StageRow name={'Max per wallet'} value={maxClaimablePerWallet} />
               <StageRow name={'Current mint supply'} value={currentMintSupply} />
@@ -114,6 +114,7 @@ const MintingPage = () => {
         />
 
         <Button
+          className={classes.button}
           variant="contained"
           size="large"
           onClick={() => contract?.erc721.claim(quantity)}

@@ -10,7 +10,7 @@ export const MediaCard: FC<{ image: string; title: string; description: string }
   description,
 }) => {
   return (
-    <Card sx={{ width: { md: 500, xs: 350 } }} elevation={10}>
+    <Card sx={{ width: { md: 500, xs: 350 } }} elevation={5}>
       <CardMedia sx={{ height: { md: 500, xs: 350 } }} image={image} title={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

@@ -46,4 +46,7 @@ export const useClasses = makeStyles()(({ spacing, palette, breakpoints }) => ({
       maxWidth: '100%',
     },
   },
+  button: {
+    color: palette.customColors.textLight,
+  },
 }));

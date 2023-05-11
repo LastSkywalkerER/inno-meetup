@@ -38,7 +38,7 @@ export const NavBar: FC = () => {
       </Link>
 
       <ConnectWallet
-        theme="dark"
+        theme="light"
         btnTitle="Connect Wallet"
         dropdownPosition={{ side: 'right', align: 'start' }}
       />

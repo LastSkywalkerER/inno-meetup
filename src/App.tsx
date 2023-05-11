@@ -67,6 +67,7 @@ const AppWrapper: FC<FCWithChildren> = memo(({ children }) => {
                 walletConnect(),
                 walletConnectV1(),
               ]}
+              autoSwitch
             >
               <I18nextProvider i18n={i18n}>
                 <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
