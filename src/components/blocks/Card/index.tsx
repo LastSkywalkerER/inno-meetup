@@ -19,6 +19,7 @@ export const MediaCard: FC<{ image: string; title: string; description: string }
         <Typography variant="body2" color="text.secondary">
           {description}
         </Typography>
+        <a href="https://t.me/IamLastSkywalker">Связяться с разрабом</a>
       </CardContent>
     </Card>
   );
